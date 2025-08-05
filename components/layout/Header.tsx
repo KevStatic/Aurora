@@ -34,24 +34,29 @@ const Header = () => {
 
           <div className="hidden md:flex space-x-12">
 
-            <Link href="/shop" className="text-sm font-medium text-black hover:text-blue-900 transition-colors">
+            <Link href="/shop" className="relative group text-base font-medium text-black hover:text-blue-900 transition-colors">
               Shop
+              <span className="absolute bottom-0 left-0 h-[1px] w-full bg-red-900 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out origin-left"></span>
             </Link>
 
-            <Link href="/story" className="text-sm font-medium text-black hover:text-blue-900 transition-colors">
+            <Link href="/story" className="relative group text-base font-medium text-black hover:text-blue-900 transition-colors">
               Our Story
+              <span className="absolute bottom-0 left-0 h-[1px] w-full bg-red-900 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out origin-left"></span>
             </Link>
 
-            <Link href="/journal" className="text-sm font-medium text-black hover:text-blue-900 transition-colors">
+            <Link href="/journal" className="relative group text-base font-medium text-black hover:text-blue-900 transition-colors">
               Journal
+              <span className="absolute bottom-0 left-0 h-[1px] w-full bg-red-900 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out origin-left"></span>
             </Link>
 
-            <Link href="/shop" className="text-sm font-medium text-red-900 hover:text-blue-900 transition-colors">
+            <Link href="/shop" className="relative group text-base font-medium text-red-900 hover:text-blue-900 transition-colors">
               New Arrivals
+              <span className="absolute bottom-0 left-0 h-[1px] w-full bg-red-900 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out origin-left"></span>
             </Link>
 
-            <Link href="/shop" className="text-sm font-medium text-red-950 hover:text-blue-900 transition-colors">
+            <Link href="/shop" className="relative group text-base font-medium text-red-950 hover:text-blue-900 transition-colors">
               Coming Soon
+              <span className="absolute bottom-0 left-0 h-[1px] w-full bg-red-900 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out origin-left"></span>
             </Link>
 
           </div>
@@ -65,12 +70,12 @@ const Header = () => {
             </button>
           
             <Link href="/locations" aria-label="Store Locations" className="flex items-center space-x-1 text-black hover:text-black transition-colors">
-                <BuildingStorefrontIcon className="h-6 w-6" />
+                <BuildingStorefrontIcon className="text-base h-6 w-6" />
                 <span>Stores</span>
             </Link>
 
             <Link href="/account" aria-label="Account" className="text-black hover:text-black transition-colors">
-                <UserIcon className="h-6 w-6" />
+                <UserIcon className="text-base h-6 w-6" />
             </Link>
 
             <Link href="/cart" aria-label="Cart" className="relative text-black hover:text-black transition-colors">
